@@ -8,8 +8,8 @@ function SearchField(props) {
     async function handleSubmit(event){
         event.preventDefault();
         try{
-            const fetchGifs = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
-            const fetchStickers = await axios.get(`http://api.giphy.com/v1/stickers/search?q=${search}&api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
+            const fetchGifs = await axios.get(`https://api.giphy.com/v1/gifs/search?q=${search}&api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
+            const fetchStickers = await axios.get(`https://api.giphy.com/v1/stickers/search?q=${search}&api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
             let fetchGiphy = [...fetchGifs.data.data,  ...fetchStickers.data.data];
             props.setGiphy(fetchGiphy);
             props.setSearched(true);

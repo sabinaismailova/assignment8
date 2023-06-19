@@ -14,8 +14,8 @@ function App(props) {
   useEffect(() =>{ 
     async function defaultDisplay(){
       try{
-        const fetchGifs = await axios.get(`http://api.giphy.com/v1/gifs/trending?api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
-        const fetchStickers = await axios.get(`http://api.giphy.com/v1/stickers/trending?api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
+        const fetchGifs = await axios.get(`https://api.giphy.com/v1/gifs/trending?api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
+        const fetchStickers = await axios.get(`https://api.giphy.com/v1/stickers/trending?api_key=ixrDFQZlIj7o5MszUeF6ByNCuYVzk7BM`);
         let fetchGiphy = [...fetchGifs.data.data, ...fetchStickers.data.data];
         setGiphy(fetchGiphy);
         setSearched(false);
