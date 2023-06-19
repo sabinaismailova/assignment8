@@ -1,3 +1,8 @@
+body{
+  background-image: radial-gradient(rgb(70, 70, 70), rgb(38, 38, 38));
+  font-family: Verdana;
+}
+
 .App {
   text-align: center;
 }

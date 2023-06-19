@@ -1,0 +1,73 @@
+.input {
+    width:75%;
+    height:32px;
+    vertical-align:middle;
+    border-radius:8px;
+    background-color:rgba(248, 248, 248);
+    border:0px;
+    box-shadow:0.5px 0.5px 5px 5px rgba(248, 248, 248, 0.5);
+    font-family: Verdana;
+    font-size:16px;
+    font-weight:100;
+    position:relative;
+    outline:0px;
+}
+
+.input:focus{
+    outline:0px;
+}
+
+.btn {
+    width:15%;
+    height:40px;
+    margin-left:24px;
+    vertical-align:middle;
+    border-radius:8px;
+    border:0px;
+    box-shadow:-1px 1px 7px 7px rgba(248, 248, 248, 0.25);
+    font-family:Verdana;
+    font-weight:550;
+    font-size:165%;
+    color:rgba(248, 248, 248);
+    background-color: rgb(38, 38, 38);
+    position:relative;
+}
+
+.btn:hover{
+    box-shadow:-1px 1px 7px 7px rgba(248, 248, 248, 0.4);
+}
+
+.header{
+    font-family: Verdana;
+    font-weight: bolder;
+    margin-bottom:16px;
+    margin-top:12px;
+    font-size: 48px;
+    color:rgba(248, 248, 248, 0.9);
+}
+
+.glow{
+    text-shadow:
+    0 0 0.1px #fff,
+    0 0 0.1px #fff,
+    0 0 0.1px #fff,
+    0 0 0.1px rgb(255, 255, 255),
+    0 0 0.2px rgb(255, 255, 255),
+    0 0 2px rgb(255, 255, 255),
+    0 0 2px rgb(255, 255, 255),
+    0 0 5px rgb(255, 255, 255);
+}
+
+.type{
+    font-family:Verdana;
+    font-size:16px;
+    font-weight:normal;
+    margin-left:4px;
+    margin-right:16px;
+    color:rgba(248, 248, 248);
+}
+
+.radio{
+    background-color:rgba(248, 248, 248);
+    accent-color: rgb(181, 74, 74);
+}
