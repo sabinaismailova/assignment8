@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 function GifCard(props){
+    //displays an img showing the gif/sticker with the specific URL passed in from props
     return (
-        <img key={props.gifSlug} type="gif" src={props.gifURL} style={{margin:"8px"}}>{console.log(props.gifURL)}</img>
+        <img key={props.gifSlug} type="gif" src={props.gifURL} style={{margin:"8px"}} alt="gif"></img>
     )
 }
 
